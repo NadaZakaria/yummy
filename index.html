@@ -1,0 +1,201 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <link rel="stylesheet" href="css/stylesheet.css" />
+
+</head>
+
+<section>
+  <div class="loadingScreen justify-content-center align-items-center">
+    <span class="loader"></span>
+  </div>
+</section>
+
+<section>
+  <div class="InnerLoadingScreen justify-content-center align-items-center d-none">
+    <span class="loader"></span>
+  </div>
+</section>
+<section id="sideBar">
+  <div class="InnerSideBar bg-black d-flex flex-column justify-content-between">
+    <div>    
+      <ul class="ps-4 fs-4 pt-5 text-white">
+      <li class="pb-3 pt-4 search animate__animated animate__backInUp">serach</li>
+      <li class="pb-3 categories animate__animated animate__backInUp">categories</li>
+      <li class="pb-3 area animate__animated animate__backInUp">area</li>
+      <li class="pb-3 ingredients animate__animated animate__backInUp">ingredients</li>
+      <li class="pb-3 contactUs animate__animated animate__backInUp">Contact us</li>
+    </ul></div>
+   <div> <p class="text-white">Copyright Â© 2019 All Rights Reserved.</p></div>
+  </div>
+  <div class="InnerSideBar2 text-white align-items-center fs-3 p-2 d-flex flex-column justify-content-between">
+    <img src="logo.png" width="50" alt="" class="text-center">
+    <div class="text-black d-flex">
+      <i class="fa-solid fa-xmark close fs-1"></i>
+      <i class="fa-solid fa-bars list "></i>
+    </div>
+    <div class="text-center text-black fs-6">
+      <i class="fa-solid fa-globe d-block"></i>
+      <i class="fa-solid fa-share-nodes pt-2 pb-4"></i>
+    </div>
+  </div>
+
+</section>
+<!-- =============================Home================================ -->
+
+<section class="py-5 bg-black home" >
+  <div class="container">
+    <div class="row" id="meals">
+    </div>
+  </div>
+
+</section>
+<!-- ==============================subHome=================================== -->
+<section class="py-5 bg-black vh-100 text-white subHome d-none">
+  <div class="container">
+    <div class="row" id="fullMeal">
+      <!-- <div class="col-md-4">
+        <img src="./58oia61564916529.jpg" alt="" class="img-fluid rounded-2 img">
+        <p class="mealName">corba</p>
+      </div>
+      <div class="col-md-8">
+        <h2>Instructions</h2>
+        <p class="Instructions"></p>
+        <h2 class="area">Area: </h2>
+        <h2 class="category"> Category: </h2>
+        <h2 class="recipes">Recipes :</h2>
+        <h2 class="tags">Tags :</h2>
+
+      </div> -->
+    </div>
+
+  </div>
+</section>
+<!-- ============================Search===================================== -->
+<section  class="py-5 bg-black  d-none searchBage">
+<div class="container">
+  <div class="inputs">
+    <input type="text" placeholder="Search By Name" class="form-control" id="searchByName">
+    <input type="text" placeholder="Search By First Letter"  class="form-control  searchLette mt-2" id="searchByLetter">
+  </div>
+</div>
+  <div class="container">
+    <div class="row sRow1" id="sRow" >
+    </div>
+  </div>
+</section>
+<!-- =============================catigories==================================== -->
+<section class="py-4 bg-black categoriesBage d-none" >
+  <div class="container">
+    <div class="row" id="cat">
+    </div>
+  </div>
+
+</section>
+<!-- =============================subCatigories==================================== -->
+<section class="py-4 bg-black categoriesdetails1 d-none" >
+  <div class="container">
+    <div class="row" id="categoriesDetails">
+
+    </div>
+  </div>
+
+</section>
+<!-- =============================area==================================== -->
+<section class="areaBage d-none py-5 text-center fs-4 text-white bg-black" >
+  <div class="container">
+    <div class="row" id="area">
+      
+    </div>
+  </div>
+
+</section>
+<!-- =============================SubArea====================================  -->
+<section class="SubAreaBage d-none py-5 text-center fs-4  bg-black" >
+  <div class="container">
+    <div class="row" id="subArea">
+  
+    </div>
+  </div>
+
+</section>
+<!-- =============================ingredients====================================  -->
+<section class="ingredientsPage py-5 text-center fs-4  bg-black text-white d-none">
+  <div class="container">
+    <div class="row" id="ingredientSpace">
+
+    </div>
+  </div>
+<!-- =============================ingredients====================================  -->
+</section>
+
+<!-- =============================SubIngredients=================================  -->
+<section class="ingredientsSubPage py-5 text-center fs-4 d-none  bg-black  text-white">
+  <div class="container">
+    <div class="row" id="ingredientSubSpace">
+     
+    </div>
+  </div>
+
+</section>
+<!-- =============================ContactUs======================================  -->
+<section class=" contactUsPage d-none py-5 text-center fs-4 bg-black  text-white ">
+  <div class="container">
+    <div class="row" id="vRow">
+      <!-- <div class="col-md-6 col-sm-1">
+        <input type="text" id="nameInput" placeholder="Enter Your Name" class="form-control">
+        <div  id="nameAlert" class=" alert alert-danger w-100 mt-2">
+          special charcters and numbers are not allowed
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-1">
+        <input type="text" id="emailInput" placeholder="Enter Your Email" class="form-control">
+        <div  id="emailAlert" class=" alert alert-danger w-100 mt-2">
+          Email not valid *exemple@yyy.zzz
+
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-1">
+        <input type="text" id="phoneInput" placeholder="Enter Your Phone Number" class="form-control">
+        <div  id="phonealert" class=" alert alert-danger w-100 mt-2 ">
+          Enter valid Phone Number
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-1">
+        <input type="number" id="ageInput" placeholder="Enter Your Age" class="form-control">
+        <div  id="ageAlert" class=" alert alert-danger w-100 mt-2 ">
+          Enter valid age
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-1">
+        <input type="password" id="passwordInput" placeholder="Enter Your password" class="form-control">
+        <div  id="passwordAlert" class=" alert alert-danger w-100 mt-2 ">
+          Enter valid password *Minimum eight characters, at least one letter and one number:*
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-1">
+        <input type="password" id="repasswordInput" placeholder="Enter Re-password" class="form-control">
+        <div  id="repasswordAlert" class=" alert alert-danger w-100 mt-2 ">
+          Enter valid re-password 
+        </div>
+      </div>
+      <button id="submitBtn" disabled class="btn btn-outline-danger px-2 mt-3">submit</button> -->
+    </div>
+  </div>
+
+</section>
+
+
+
+<script src="jquery-3.7.1.min.js"></script>
+<script src=" js/bootstrap.bundle.min.js"></script>
+<script src="js/mine.js"></script>
+</body>
+
+</html>

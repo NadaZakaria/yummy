@@ -1,0 +1,200 @@
+.loadingScreen{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  z-index: 999999999999999999999999999999999;
+  display: flex;
+}
+
+.InnerLoadingScreen{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:teal;
+    z-index: 9999999;
+    display: flex;
+}
+body{
+    overflow: hidden;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-width: 3px;
+    border-style: dashed solid  solid dotted;
+    border-color: #FF3D00 #FF3D00 transparent #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 20px;
+    top: 31px;
+    border: 10px solid transparent;
+    border-right-color: #FF3D00;
+    transform: rotate(-40deg);
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  
+
+.mainContnt{
+    font-size: 50px
+}
+
+#sideBar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 999999999;
+    display: flex;
+
+}
+
+ .InnerSideBar ul  {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+}
+.InnerSideBar ul li:hover {
+    color: brown;
+    transition: 0.2s;
+}
+
+.InnerSideBar{
+    width: 250px;
+    padding-left: 10px;
+   
+}
+
+.InnerSideBar2{
+    background-color: white;
+    cursor: pointer;
+}
+
+.mainImage{
+    border-radius:15px;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: .5s;
+    border-radius:15px;
+    position: absolute;
+
+}
+
+.meal:hover .layer{
+    top: 0%;
+    transition: .5s;
+    border-radius:15px;
+    
+}
+
+.form-control{
+    background-color: black;
+}
+.form-control:focus{
+    background-color: black;
+    color: white
+}
+.form-control::placeholder{
+    color: gray;
+}
+
+.categoriesOne{
+    position: relative;
+    border-radius:15px;
+}
+
+.layerOne{
+    width: 100%;
+    height: 100%;
+    background-color:#f9f6f6ca;;
+    top: 100%;
+    transition: .5s;
+    border-radius:15px;
+    position: absolute;
+
+}
+
+.categoriesOne:hover .layerOne{
+    top: 0%;
+    transition: .5s;
+    border-radius:15px;
+    
+}
+
+.layerTwo{
+    width: 100%;
+    height: 100%;
+    background-color:#f9f6f6ca;;
+    top: 100%;
+    transition: .5s;
+    border-radius:15px;
+    position: absolute;
+}
+
+.cDetails{
+    border-radius:15px;
+}
+
+.cDetails:hover .layerTwo{
+    top: 0%;
+    transition: .5s;
+    border-radius:15px;
+}
+
+.pic{
+    border-radius:15px;
+}
+
+
+.layerThree , .layerFour , .layerFive{
+    width: 100%;
+    height: 100%;
+    background-color:#f9f6f6ca;;
+    top: 100%;
+    transition: .5s;
+    border-radius:15px;
+    position: absolute;
+}
+
+.area , .subIng {
+    border-radius:15px;
+}
+
+.area:hover .layerThree , .subIng:hover .layerFour , .searchL:hover .layerFive{
+    top: 0%;
+    transition: .5s;
+    border-radius:15px;
+}
+
+.icon{
+    font-size: 70px;
+
+}
+#sRow{
+    margin-top: 100px;
+}
+
